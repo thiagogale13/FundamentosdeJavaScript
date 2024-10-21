@@ -17,24 +17,22 @@ function compareSeven() {
 // Operadores lógicos
 // 4. Verifica si puedes comprar un producto de 1500 con un descuento del 25% teniendo 1150€ e imprime si puedes o no.
 function canBuyProduct() {
-    const precioProducto = 1500;
-    const descuento = 0.25;
-    const precioConDescuento = precioProducto * (1 - descuento);
-    const dineroDisponible = 1150;
-
-    console.log(dineroDisponible >= precioConDescuento);
+    const price = 1500;
+    const discount = 0.25;
+    const budget = 1150;
+    console.log(budget >= price * (1 - discount));
 }
 
 // Variables
 // 5. Crea una variable llamada `mensaje` y asígnale el valor "Hola JavaScript", luego imprime la variable en consola.
 function createMessageVariable() {
-    const mensaje = "Hola JavaScript";
+    let mensaje = "Hola JavaScript";
     console.log(mensaje);
 }
 
 // 6. Crea una variable llamada `resultado` y asígnale la suma de 2 y 3, luego imprime la variable en consola.
 function createSumVariable() {
-    const resultado = 2 + 3;
+    let resultado = 2 + 3;
     console.log(resultado);
 }
 
@@ -60,13 +58,13 @@ function createUndefinedVariable() {
 // typeof
 // 10. Escribe un código para ver el tipo de una variable llamada `userName` e imprime el tipo de dato en consola.
 function checkUserNameType() {
-    let userName = "John Doe";
+    let userName = "usuario";
     console.log(typeof userName);
 }
 
 // 11. Asegúrate de que `dogId` es una cadena de texto y luego imprime el tipo de dato en consola.
 function checkDogIdIsString() {
-    let dogId = String(1234);  // Convertimos el número en cadena
+    let dogId = "1234";
     console.log(typeof dogId);
 }
 
@@ -88,7 +86,7 @@ function logVersion() {
     console.log("La versión de JavaScript es " + version);
 }
 
-// Llamadas a las funciones para ejecutar el código y ver los resultados en la terminal.
+// Llamadas a las funciones
 compareTenAndNine();
 compareZeroAndZero();
 compareSeven();
