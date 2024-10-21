@@ -87,23 +87,6 @@ function logVersion() {
     let version = 2024;
     console.log("La versión de JavaScript es " + version);
 }
-
-// Llamadas a las funciones para ejecutar el código y ver los resultados en la terminal.
-compareTenAndNine();
-compareZeroAndZero();
-compareSeven();
-canBuyProduct();
-createMessageVariable();
-createSumVariable();
-createDisabledConstant();
-createNullVariable();
-createUndefinedVariable();
-checkUserNameType();
-checkDogIdIsString();
-logMessage();
-logAge();
-logVersion();
-
 // Exportar todas las funciones para poder usarlas en las pruebas
 module.exports = {
     compareTenAndNine,
